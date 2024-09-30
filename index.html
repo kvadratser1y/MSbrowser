@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSbrowser</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/6810/6810583.png">
+</head>
+<body>
+    <header>
+        <h1>MSbrowser</h1>
+        <div class="header-controls">
+            <button id="togglePanel">Скрыть/Показать боковую панель</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="sidebar" id="sidebar">
+            <h2>Заметки</h2>
+            <textarea id="notes" placeholder="Запишите свои заметки здесь..."></textarea>
+            <h2>ChatGPT</h2>
+            <div id="chatgpt">Здесь будет ChatGPT</div>
+        </div>
+
+        <div class="content">
+            <h2><img class="icon" src="https://cdn-icons-png.flaticon.com/128/7249/7249188.png" alt="Bookmark Icon"> Закладки</h2>
+            <ul id="bookmarks">
+                <li><a href="#">Пример закладки 1</a></li>
+                <li><a href="#">Пример закладки 2</a></li>
+            </ul>
+
+            <p class="availability">Доступно только на MacOS, но уже в работе над версией на Windows :)</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MSbrowser. <a href="https://example.com/download">Скачать</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
