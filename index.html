@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSbrowser</title>
+    <title>MSbrowser - Браузер будущего</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/6810/6810583.png">
 </head>
 <body>
     <header>
         <h1>MSbrowser</h1>
-        <div class="header-controls">
-            <button id="togglePanel">Скрыть/Показать боковую панель</button>
-        </div>
+        <p>Браузер, который заботится о вашей конфиденциальности и производительности</p>
     </header>
 
     <main>
-        <div class="sidebar" id="sidebar">
+        <section class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/128/7249/7249188.png" alt="Bookmarks Icon" class="feature-icon">
+            <h2>Закладки</h2>
+            <p>Удобный доступ к вашим любимым сайтам. Быстрое добавление и управление закладками для максимального удобства.</p>
+        </section>
+
+        <section class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/128/1632/1632670.png" alt="Privacy Icon" class="feature-icon">
+            <h2>Без сохранения истории</h2>
+            <p>Ваши данные — только ваши. MSbrowser не сохраняет историю, куки и пароли, гарантируя полную приватность.</p>
+        </section>
+
+        <section class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/128/3649/3649468.png" alt="Notes Icon" class="feature-icon">
             <h2>Заметки</h2>
-            <textarea id="notes" placeholder="Запишите свои заметки здесь..."></textarea>
-            <h2>ChatGPT</h2>
-            <div id="chatgpt">Здесь будет ChatGPT</div>
-        </div>
+            <p>Удобная боковая панель для сохранения заметок прямо во время работы. Все заметки сохраняются автоматически и остаются в безопасности.</p>
+        </section>
 
-        <div class="content">
-            <h2><img class="icon" src="https://cdn-icons-png.flaticon.com/128/7249/7249188.png" alt="Bookmark Icon"> Закладки</h2>
-            <ul id="bookmarks">
-                <li><a href="#">Пример закладки 1</a></li>
-                <li><a href="#">Пример закладки 2</a></li>
-            </ul>
+        <section class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/128/7248/7248660.png" alt="ChatGPT Icon" class="feature-icon">
+            <h2>Интеграция с ChatGPT</h2>
+            <p>Боковая панель с доступом к ChatGPT прямо в вашем браузере, для мгновенной помощи и ответов на ваши вопросы.</p>
+        </section>
 
-            <p class="availability">Доступно только на MacOS, но уже в работе над версией на Windows :)</p>
-        </div>
+        <section class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/128/1040/1040233.png" alt="Movable Toolbar Icon" class="feature-icon">
+            <h2>Перемещаемая верхняя панель</h2>
+            <p>Персонализируйте свой браузер с помощью возможности перемещать главную панель по вашему усмотрению.</p>
+        </section>
+
+        <section class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/128/6810/6810583.png" alt="Memory Icon" class="feature-icon">
+            <h2>Оптимизация памяти</h2>
+            <p>MSbrowser минимизирует использование оперативной памяти, убирая лишние вкладки и ресурсы, чтобы браузер работал быстрее.</p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 MSbrowser. <a href="https://example.com/download">Скачать</a></p>
+        <p>&copy; 2024 MSbrowser. Доступно только на MacOS, но уже в работе над версией на Windows :)</p>
+        <p><a href="https://example.com/download">Скачать браузер</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
