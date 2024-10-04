@@ -3,58 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSbrowser - Браузер будущего</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MSbrowser</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/6810/6810583.png">
-</head>
-<body>
+    <!-- Подключение шрифта Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
     <header>
-        <h1>MSbrowser</h1>
-        <p>Браузер, который заботится о вашей конфиденциальности и производительности</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">Про компанию</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#contact">Скачать браузер</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/128/7249/7249188.png" alt="Bookmarks Icon" class="feature-icon">
-            <h2>Закладки</h2>
-            <p>Удобный доступ к вашим любимым сайтам. Быстрое добавление и управление закладками для максимального удобства.</p>
-        </section>
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>MSbrowser - Браузер будущего</h1>
+            <p>Откройте новый experience в веб-серфинге.</p>
+            <button onclick="scrollToSection('contact')">Скачать браузер</button>
+        </div>
+    </section>
 
-        <section class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/128/1632/1632670.png" alt="Privacy Icon" class="feature-icon">
-            <h2>Без сохранения истории</h2>
-            <p>Ваши данные — только ваши. MSbrowser не сохраняет историю, куки и пароли, гарантируя полную приватность.</p>
-        </section>
+    <!-- Секция "Услуги" -->
+    <section id="services">
+        <h2>Услуги</h2>
+        <div class="service">
+            <h3>Кастомизация</h3>
+            <p>Одна сессія = 90 хвилин</p>
+            <p>Варість = 50$ / 2000 UAH</p>
+        </div>
+        <div class="service">
+            <h3>5 сессій</h3>
+            <p>5 сессій по 60 хвилин</p>
+            <p>Перша сессія знайомства безокштовна</p>
+            <p>Вартість = 200$ / 8000 UAH</p>
+        </div>
+        <div class="service">
+            <h3>8 сессій</h3>
+            <p>8 сессій по 60 хвилин</p>
+            <p>Перша сессія знайомства безокштовна</p>
+            <p>Вартість = 300$ / 12000 UAH</p>
+        </div>
+        <div class="service">
+            <h4>ЗНИЖКА 70%</h4>
+            <h3>Індівідуальний коучінговий супровід</h3>
+            <p>Перша сессія знайомства безокштовна</p>
+            <p>Вартість =  200$ / 1300 UAH 3̶0̶0̶$̶ / 2̶0̶0̶0̶ ̶U̶A̶H̶</p>
+        </div>
+    </section>
 
-        <section class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/128/3649/3649468.png" alt="Notes Icon" class="feature-icon">
-            <h2>Заметки</h2>
-            <p>Удобная боковая панель для сохранения заметок прямо во время работы. Все заметки сохраняются автоматически и остаются в безопасности.</p>
-        </section>
+    <!-- Секция "Обо мне" -->
+    <section id="about">
+        <h2>Про себе</h2>
+        <div class="about-content">
+            <img src="images/about.jpg" alt="Обо мне">
+            <div class="about-text">
+                <p>[Краткая биография, опыт и достижения]</p>
+                <p>Я специализируюсь на ... [детали]</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/128/7248/7248660.png" alt="ChatGPT Icon" class="feature-icon">
-            <h2>Интеграция с ChatGPT</h2>
-            <p>Боковая панель с доступом к ChatGPT прямо в вашем браузере, для мгновенной помощи и ответов на ваши вопросы.</p>
-        </section>
+    <!-- Секция "Отзывы" -->
+    <section id="testimonials">
+        <h2>Відгуки</h2>
+        <div class="testimonial">
+            <p>Відгук</p>
+            <p><strong>Клієнт 1</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>Відгук</p>
+            <p><strong>Клієнт 2</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>Відгук</p>
+            <p><strong>Клієнт 3</strong></p>
+        </div>
+    </section>
 
-        <section class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/128/1040/1040233.png" alt="Movable Toolbar Icon" class="feature-icon">
-            <h2>Перемещаемая верхняя панель</h2>
-            <p>Персонализируйте свой браузер с помощью возможности перемещать главную панель по вашему усмотрению.</p>
-        </section>
-
-        <section class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/128/6810/6810583.png" alt="Memory Icon" class="feature-icon">
-            <h2>Оптимизация памяти</h2>
-            <p>MSbrowser минимизирует использование оперативной памяти, убирая лишние вкладки и ресурсы, чтобы браузер работал быстрее.</p>
-        </section>
-    </main>
+    <!-- Секция Контакти на украинском языке -->
+    <section id="contact">
+        <h2>Зв'яжіться з нами</h2>
+        <p>Якщо ви бажаєте записатися на коучинг-сесію, натисніть кнопку нижче, щоб перейти до форми.</p>
+        <!-- Ссылка на Google Forms -->
+        <a href="https://forms.gle/SU76KdjZD86YTcgj9" target="_blank">
+        <button>Записатися на сесію</button>
+        </a>
+    </section>
 
     <footer>
-        <p>&copy; 2024 MSbrowser. Доступно только на MacOS, но уже в работе над версией на Windows :)</p>
-        <p><a href="https://example.com/download">Скачать браузер</a></p>
+        <h9>сайт зроблен @kvadratsites</h9>
     </footer>
+
+    <footer>
+        <p>&copy; 2024 Коучінг з tvij_coach. Усі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
