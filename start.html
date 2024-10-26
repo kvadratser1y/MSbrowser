@@ -124,11 +124,11 @@
         <div class="recommended-sites">
             <h2>📈Popular Sites</h2>
             <ul>
-                <li><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></li>
-                <li><a href="https://www.tiktok.com/" target="_blank">TikTok</a></li>
-                <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
+                <li><a href="https://www.wikipedia.org/" onclick="redirect(event)">Wikipedia</a></li>
+                <li><a href="https://www.tiktok.com/" onclick="redirect(event)">TikTok</a></li>
+                <li><a href="https://www.youtube.com/" onclick="redirect(event)">Youtube</a></li>
+                <li><a href="https://www.instagram.com/" onclick="redirect(event)">Instagram</a></li>
+                <li><a href="https://www.pinterest.com/" onclick="redirect(event)">Pinterest</a></li>
             </ul>
         </div>
 
@@ -172,6 +172,12 @@
     </div>
 
     <script>
+        // Функция перенаправления на выбранный сайт
+        function redirect(event) {
+            event.preventDefault(); // Отключает стандартное поведение ссылки
+            window.location.href = event.target.href; // Перенаправляет на URL сайта
+        }
+        
         // Переменные для хранения данных в localStorage
         const storageKeys = {
             font: 'selectedFont',
