@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: black; /* Set a black background color */
+    background-image: url('https://i.pinimg.com/originals/a3/50/87/a3508797091683ab55e1d0534c6ba97a.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    opacity: 0; /* Start hidden for animation */
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fade to fully visible */
+    }
+}
+
+.container {
+    text-align: center;
+    position: relative; /* To allow z-index adjustment */
+    z-index: 1; /* Ensure the text is above the GIF */
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #357ab7;
+}
+
+.recommended-sites {
+    margin-top: 20px;
+}
+
+.recommended-sites h2 {
+    margin-bottom: 10px;
+}
+
+.recommended-sites ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recommended-sites li {
+    margin: 5px 0;
+}
+
+.recommended-sites a {
+    color: white;
+    text-decoration: none;
+}
+
+.recommended-sites a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
